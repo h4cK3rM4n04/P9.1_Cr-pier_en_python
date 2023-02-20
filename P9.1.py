@@ -27,13 +27,15 @@ def somme_d_une_liste(H):#Code by h4ck3rM4n°4
 		nbr += j
 	return nbr
 
-def maximum(J):#Code by h4cK3rM4n°4
-	max_value = J[0]
-	for x in range(len(J)):
-		while max_value < J[x]:
-			max_value = J[x]
-	return max_value
-
+def maximum(J):#Code by h4cK3rM4n°4	#
+	max_value = J[0]				#
+	for x in range(len(J)):			#
+		while max_value < J[x]:		#
+			max_value = J[x]		#
+	return max_value				#
+									#	Les deux fonctions ont pour but de trouver l'indice du maximum dans une liste!
 def indice_maximum(K):
-	pass
+	for i in range(len(K)):
+		if K[i] == maximum(K):
+			return i
 print(indice_maximum(lst_4))
