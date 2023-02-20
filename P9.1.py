@@ -27,10 +27,13 @@ def somme_d_une_liste(H):#Code by h4ck3rM4n°4
 		nbr += j
 	return nbr
 
-def indice_maximum(J):#Code by h4cK3rM4n°4
+def maximum(J):#Code by h4cK3rM4n°4
 	max_value = J[0]
 	for x in range(len(J)):
 		while max_value < J[x]:
 			max_value = J[x]
 	return max_value
-print(indice_maximum(lst_5))
+
+def indice_maximum(K):
+	pass
+print(indice_maximum(lst_4))
